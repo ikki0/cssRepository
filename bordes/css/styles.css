@@ -1,0 +1,33 @@
+:root {
+    font-size: 16px;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(253, 245, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    border-left: 10px double black;
+    border-top: 8px dotted green;
+    border-right: 10px dashed blue;
+    border-bottom: 8px solid red;
+}
