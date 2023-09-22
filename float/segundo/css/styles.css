@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    height: 10vh;
+    background-color: red;
+}
+
+nav {
+    height: 5vh;
+    background-color: blue;
+}
+
+section {
+    float: left;
+    height: 80vh;
+    width: 60%;
+    background: pink;
+}
+
+aside {
+    float: right;
+    background-color: purple;
+    height: 80vh;
+    width: 35%;
+}
+
+footer {
+    background-color: yellowgreen;
+    height: 5vh;
+    width: 100%;
+    clear: both;
+}
