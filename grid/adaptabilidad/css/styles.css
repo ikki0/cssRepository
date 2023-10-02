@@ -1,0 +1,95 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+}
+
+.header {
+    grid-area: header;
+    background-color: #000;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: rgb(255, 60, 60);
+}
+
+.hero {
+    grid-area: hero;
+    background-color: rgb(49, 176, 255);
+}
+
+.main {
+    grid-area: main;
+    background-color: rgb(51, 55, 58);
+}
+
+.image {
+    grid-area: image;
+    background-color: lightblue;
+}
+
+.extra {
+    grid-area: extra;
+    background-color: green;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: rgb(197, 197, 1);
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media ((width >= 425px) and (width < 768px)) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "hero"
+            "main"
+            "banner"
+            "extra"
+            "image";
+    }
+}
+
+@media ((width >= 768px) and (width < 1024px)) {
+    body {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 4fr 3fr 2fr 2fr;
+        grid-template-areas:
+            "header header header header"
+            "hero hero hero hero"
+            "menu main main main"
+            "menu banner banner banner"
+            "menu extra extra image";
+    }
+}
+
+@media (width >= 1024px) {
+    body {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-areas:
+            "header menu menu menu"
+            "hero hero hero hero"
+            "main main auto image"
+            "main main auto extra"
+            "banner banner banner banner";
+    }
+}
